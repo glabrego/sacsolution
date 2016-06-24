@@ -9,8 +9,15 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'materialize-sass'
+gem 'responders'
+gem 'factory_girl_rails'
+gem 'devise'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.4'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'pry-byebug'
   gem 'byebug'
 end
 

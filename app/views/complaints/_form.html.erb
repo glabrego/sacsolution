@@ -1,0 +1,19 @@
+<div>
+  <%= form_for @complaint do |f| %>
+    <div>
+      <%= f.label :subject %>
+      <%= f.text_field :subject %>
+    </div>
+    <div>
+      <%= f.label :complaint_type %>
+      <%= f.text_field :complaint_type %>
+    </div>
+    <div>
+      <%= f.label :content %>
+      <%= f.text_area :content %>
+    </div>
+    <div>
+      <%= f.submit 'Enviar Reclamação' %>
+    </div>
+  <% end %>
+</div>

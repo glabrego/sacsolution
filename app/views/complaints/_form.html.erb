@@ -1,19 +1,23 @@
-<div>
-  <%= form_for @complaint do |f| %>
-    <div>
-      <%= f.label :subject %>
-      <%= f.text_field :subject %>
+<div class="row container">
+  <form class="col s12 offset-l1">
+    <div class="row">
+      <%= form_for @complaint do |f| %>
+        <div class="input-field">
+          <%= f.label :subject %>
+          <%= f.text_field :subject %>
+        </div>
+        <div class="input-field">
+          <%= f.label :complaint_type %>
+          <%= f.text_field :complaint_type %>
+        </div>
+        <div class="input-field">
+          <%= f.label :content %>
+          <%= f.text_area :content, class:'materialize-textarea' %>
+        </div>
+        <div>
+          <%= f.submit 'Enviar Reclamação', class: 'btn' %>
+        </div>
+      <% end %>
     </div>
-    <div>
-      <%= f.label :complaint_type %>
-      <%= f.text_field :complaint_type %>
-    </div>
-    <div>
-      <%= f.label :content %>
-      <%= f.text_area :content %>
-    </div>
-    <div>
-      <%= f.submit 'Enviar Reclamação' %>
-    </div>
-  <% end %>
+  </form>
 </div>

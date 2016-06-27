@@ -17,7 +17,7 @@ class ComplaintsController < ApplicationController
 
   def update
     @complaint.update(complaint_params)
-    render @complaint
+    redirect_to complaint_path(@complaint)
   end
 
   def show

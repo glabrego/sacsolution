@@ -14,6 +14,7 @@ gem 'materialize-sass'
 gem 'responders'
 gem 'factory_girl_rails'
 gem 'devise'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.4'

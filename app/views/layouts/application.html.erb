@@ -12,9 +12,15 @@
     </header>
     <main>
     <%= render partial: '/layouts/sidebar' %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="row container">
+      <div class="col s12 offset-l1">
+        <div class="row">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
     </main>
     <footer>
       <%= render partial: '/layouts/footer' %>

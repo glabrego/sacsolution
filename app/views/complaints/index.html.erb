@@ -1,3 +1,4 @@
+<%= render partial: 'empty_card' unless @complaints.any?  %>
 <% @complaints.each do |complaint| %>
   <%= render partial: complaint %>
 <% end %>

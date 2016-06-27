@@ -12,7 +12,7 @@ class ComplaintsController < ApplicationController
 
   def create
     @complaint = Complaint.create(complaint_params)
-    render @complaint
+    redirect_to complaint_path(@complaint)
   end
 
   def update

@@ -1,7 +1,8 @@
 <ul class="collection with-header">
-  <li class="collection-item active"><h4><%= complaint.subject %></h4></li>
+  <li class="collection-item active"><h4><%= 'Protocolo:' + complaint.id.to_s %></h4></li>
   <li class="collection-item"><%= complaint.id %></li>
   <li class="collection-item"><%= complaint.complaint_type %></li>
   <li class="collection-item"><%= complaint.content %></li>
+  <li class="collection-item"><%= link_to 'Alterar reclamação', edit_complaint_path(complaint) %></li>
 </ul>
 <br/>

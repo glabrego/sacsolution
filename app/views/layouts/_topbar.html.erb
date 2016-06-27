@@ -2,9 +2,7 @@
   <div class="nav-wrapper">
     <%= link_to 'SAC Solution', root_path, class: 'center-align container brand-logo' %>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <%# <li><a href="sass.html">Sass</a></li> %>
-      <%# <li><a href="badges.html">Components</a></li> %>
-      <%# <li><a href="collapsible.html">JavaScript</a></li> %>
+      <li><%= link_to 'Logout', destroy_user_session_path, 'data-method': 'delete' %></li>
     </ul>
   </div>
 </nav>

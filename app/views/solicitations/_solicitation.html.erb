@@ -1,0 +1,7 @@
+<ul class="collection with-header">
+  <li class="collection-item active"><h6><%= 'Protocolo da solicitação: ' + solicitation.id.to_s %></h6></li>
+  <li class="collection-item"><%= solicitation.subject %></li>
+  <li class="collection-item"><%= solicitation.content %></li>
+  <li class="collection-item"><%= link_to 'Alterar solicitação', edit_solicitation_path(solicitation) %></li>
+</ul>
+<br/>

@@ -4,6 +4,7 @@ class ComplaintsController < ApplicationController
 
   def index
     @complaints = Complaint.all
+    @solicitations = Solicitation.all
   end
 
   def new

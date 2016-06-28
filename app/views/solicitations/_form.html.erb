@@ -1,0 +1,13 @@
+<%= form_for @solicitation do |f| %>
+  <div class="input-field">
+    <%= f.label :subject %>
+    <%= f.text_field :subject %>
+  </div>
+  <div class="input-field">
+    <%= f.label :content %>
+    <%= f.text_area :content, class:'materialize-textarea' %>
+  </div>
+  <div class="input-field center-align">
+    <%= f.submit 'Enviar Solicitação', class: 'btn' %>
+  </div>
+<% end %>

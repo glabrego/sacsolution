@@ -1,6 +1,11 @@
 <%= render partial: 'notices' %>
-<h5 class="center-align card-panel red lighten-1 white-text">Solicitações</h5>
-<%= render partial: 'empty_card' unless @complaints.any?  %>
+<h5 class="center-align card-panel red lighten-1 white-text">Minhas reclamações</h5>
+<%= render partial: 'empty_card' unless @complaints.any? %>
 <% @complaints.each do |complaint| %>
   <%= render partial: complaint %>
+<% end %>
+
+<h5 class="center-align card-panel red lighten-1 white-text">Minhas solicitações</h5>
+<% @solicitations.each do |solicitation| %>
+  <%= render partial: solicitation %>
 <% end %>

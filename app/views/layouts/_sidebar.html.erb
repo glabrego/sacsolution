@@ -2,9 +2,8 @@
   <li><%= link_to 'Todas as informações', complaints_path %></li>
   <li><%= link_to 'Nova Reclamação', new_complaint_path %></li>
   <li><%= link_to 'Nova Solicitação', new_solicitation_path %></li>
-
 </ul>
-<ul id="slide-out" class="side-nav fixed">
+<ul id="slide-out" class="side-nav fixed hido-on-med-and-down">
   <%= link_to root_path do %>
     <p class="center-align"><%= image_tag("group-of-people.png", width: '64', height:'64')%></p>
   <% end %>
@@ -13,3 +12,8 @@
   <li><%= link_to 'Nova Solicitação', new_solicitation_path %></li>
 </ul>
 <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+
+<script type="text/javascript">
+$('.button-collapse').sideNav('show');
+$('.button-collapse').sideNav();
+</script>

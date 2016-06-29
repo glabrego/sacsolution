@@ -1,5 +1,6 @@
 <nav class="blue darken-2">
   <div class="nav-wrapper container">
+    <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
     <%= link_to 'SAC Solution', root_path, class: 'brand-logo center' %>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><%= current_user.email if current_user %></li>
@@ -7,3 +8,4 @@
     </ul>
   </div>
 </nav>
+
